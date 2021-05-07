@@ -1,0 +1,44 @@
+.hero{
+    width: 100%;
+    min-height: 50vh;
+    background: url(../../src/img/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &__img{
+        max-width: 1024px;
+        max-height: 100%;
+        margin: auto;
+        text-align: center;
+        object-fit: cover;
+
+        &__image{
+            width: 90%;
+            height: 100%;
+        }
+    }
+
+    &__content{
+        max-width: 1024px;
+        min-height: 300px;
+        padding: 0 2rem;
+        margin: auto;
+        text-align: center;
+
+
+        &__title{
+            @include font600;
+            padding-bottom: 1rem;
+        }
+        &__description{
+            @include font400;
+            padding: 0 4rem 2rem 4rem;
+
+            @media (max-width:768px){
+                padding: 1rem .5rem;
+            }
+        }
+    }
+}   

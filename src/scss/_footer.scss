@@ -1,0 +1,91 @@
+.footer{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: $DarkBlueF;
+    text-align: left;
+
+    .logo__img{
+        width: 160px;
+        padding-bottom: 1rem;
+    }
+
+    .row{
+        height: auto;
+        justify-content: space-between;
+        align-items: flex-start;
+        .logo{
+            &__des{
+                @include font300;
+            }
+        }
+        .contact{
+            &__ph{
+                @include font300;
+
+                i{
+                    font-size: 1.25rem;
+                }
+            }
+            &__email{
+                @include font300;
+
+                i{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .footer-sm{
+            .sitemap{
+                &__items{
+                    &:not(:last-child){
+                        padding-bottom: .5rem;
+                    }
+                }
+                &__links{
+                    @include font300;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                width: auto;
+                min-height: 140px;
+
+                @media (max-width:768px){
+                    padding-bottom: 1rem;
+                    min-height: 100px;
+                }
+            }
+
+            @media (max-width:768px){
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 1rem 0;
+            }
+        }
+        .sci{
+            text-align: center;
+
+            a{
+
+                i{
+                    @include font400;
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        transform: scale(1.02);
+                        color: $Cyan;
+                    } 
+                }
+                &:not(:last-child){
+                    margin-right: .5rem;
+                }
+            }
+
+            @media (max-width:768px){
+                text-align: left;
+            }
+        }
+    }
+}

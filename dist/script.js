@@ -1,0 +1,2 @@
+const form=document.querySelector(".form"),emailField=document.querySelector('input[type="email"]'),submitField=document.querySelector('input[type="submit"]'),errorField=document.querySelector(".error");form.addEventListener("submit",(e=>(e.preventDefault(),""===emailField.value||null==emailField.value?(errorField.innerHTML="Please Fill Out",!1):""!=emailField?(errorField.innerHTML=null,!0):void 0)));
+//# sourceMappingURL=script.js.map

@@ -1,0 +1,40 @@
+@mixin font600 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: $White;
+    letter-spacing: 2px;
+
+    @media (max-width:768px){
+        font-size: 1.5rem;
+    }
+}
+@mixin font500 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $White;
+    letter-spacing: 1px;
+
+    @media (max-width:768px){
+        font-size: 1rem;
+    }
+}
+@mixin font400 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $White;
+    letter-spacing: 1px;
+
+    @media (max-width:768px){
+        font-size: .9rem;
+    }
+}
+@mixin font300 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: $White;
+    letter-spacing: 1px;
+
+    @media (max-width:768px){
+        font-size: 0.875rem;
+    }
+}
