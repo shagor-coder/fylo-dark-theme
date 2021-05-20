@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="shortcut icon" href="./src/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/img/favicon-32x32.png" type="image/x-icon">
     <!-- BootStrap & Font Awesome -->
-    <link rel="stylesheet" href="./src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/font-awesome.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="dist/style.css">
     <title>Fylo</title>
@@ -161,8 +162,10 @@
     <!-- Teams -->
     <section class="teams padding__y" id="teams">
         <div class="container">
-            <div class="row">
-                <div class="row__cl-lg-33 row__cl-sm-100">
+
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <div class="card">
                         <p class="card__des">
                             Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
@@ -176,7 +179,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row__cl-lg-33 row__cl-sm-100">
+
+                <div class="swiper-slide">
                     <div class="card">
                         <p class="card__des">
                             Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
@@ -190,7 +194,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row__cl-lg-33 row__cl-sm-100">
+
+                <div class="swiper-slide">
                     <div class="card">
                         <p class="card__des">
                             Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
@@ -207,8 +212,9 @@
             </div>
         </div>
     </section>
-    <!-- Teams End -->
+    <!-- Teams Ends -->
 
+    
     <!-- Access -->
     <section class="access padding__y" id="access">
         <div class="container">
@@ -229,6 +235,7 @@
         </div>
     </section>
     <!-- Access Ends -->
+
 
     <!-- Footer -->
     <section class="footer padding__y" id="footer">
@@ -286,37 +293,9 @@
     </section>
     <!-- Footer Ends -->
 
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-
- 
-   <!-- Custom Js -->
-   <script src="src/js/script.js"></script>
+    <!-- Swiper Js  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom Js -->
+    <script src="src/js/script.js"></script>
 </body>
 </html>

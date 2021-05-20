@@ -1,6 +1,10 @@
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
+    z-index: 999;
 
     .nav{
         width: 100%;
@@ -38,14 +42,21 @@
             &__links{
                 @include font300;
                 padding: .5rem .3rem;
-                opacity: .875;
-                transition-duration: 0ms;
+                color: $White;
 
                 &:hover{
-                    opacity: 1;
                     text-decoration: underline;
+                }
+
+                @media only screen and (min-width: 1200px){
+                    font-size: 1.3rem;
+                    font-weight: 500;
                 }
             }
         }
+    }
+
+    &.active{
+        background: $DarkBlue;
     }
 }

@@ -3,33 +3,60 @@
     height: auto;
     margin: auto;
 
-    .card{
-        padding: 1.5rem 1rem;
-        text-align: left;
-        height: auto;
-        background: $DarkBlueT;
-        border-radius: 5px;
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
 
-        &__des{
-            @include font300;
-            padding-bottom: 1rem;
-        }
-        &__footer{
-            align-items: center;
-            &__img{
-                width: 70px;
-                height: 70px;
-                border-radius: 50%;
+
+
+        .card{
+            padding: 1.5rem 1rem;
+            text-align: left;
+            height: auto;
+            background: $DarkBlueT;
+            border-radius: 5px;
+
+            &__des{
+                @include font300;
+                padding-bottom: 1rem;
             }
-            &__content{
-                h4{
-                    @include font400;
+            &__footer{
+                align-items: center;
+                &__img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
                 }
-                p{
-                    @include font400;
-                    font-size: 1rem;
+                &__content{
+                    h4{
+                        @include font400;
+                    }
+                    p{
+                        @include font400;
+                        font-size: 1rem;
+                    }
                 }
             }
         }
+
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            filter: blur(1px);
+        }
+        .swiper-slide-active{
+            filter: blur(0);
+        }
+        .swiper-slide-shadow-left{
+            background-image: none;
+        }
+        .swiper-slide-shadow-right{
+            background-image: none;
+        }
+
     }
 }

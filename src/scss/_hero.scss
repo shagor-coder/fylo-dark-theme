@@ -1,10 +1,7 @@
 .hero{
+    padding-top: 5rem;
     width: 100%;
     min-height: 50vh;
-    background: url(../../src/img/bg-curvy-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     position: relative;
 
     &__img{
@@ -15,8 +12,7 @@
         object-fit: cover;
 
         &__image{
-            width: 90%;
-            height: 100%;
+            max-width: 100%;
         }
     }
 
